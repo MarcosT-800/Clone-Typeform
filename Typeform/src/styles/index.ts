@@ -1,7 +1,9 @@
-import styled from 'styled-components'
-import { motion } from 'framer-motion'
+//aqui vai ficar as estilizações padrões do nosso site
+import styled from 'styled-components' // importando o style de style components
+import { motion } from 'framer-motion'  // importando também o motion de dentro do frame motion
 
-export const Main = styled.main`
+//exportando o main que usaremos entro do App.tsx
+export const Main = styled.main` 
   .first {
     background: red;
     overflow: hidden;
