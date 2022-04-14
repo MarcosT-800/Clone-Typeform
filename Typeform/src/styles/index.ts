@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'  // importando também o motion de dentro
 
 //exportando o main que usaremos entro do App.tsx
 export const Main = styled.main` 
-  .first {
+  .first {  {/**/}
     background: red;
     overflow: hidden;
 
@@ -57,14 +57,16 @@ export const Main = styled.main`
   }
 `
 
-export const Section = styled.div`
+//Estilizando as Sections da página
+export const Section = styled.div` 
   position: relative;
 `
 
+//Estilizando os Stickt da página
 export const Sticky = styled(motion.div)`
-  height: 100vh;
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
+  height: 100vh; {/*Irá ocupar 100% da altura da tela*/}
+  position: sticky; 
+  top: 0; {/*irá ficar fixado no topo*/}
+  left: 0;  {/*irá ficar fixado no lado esquerdo*/}
+  right: 0;  {/*irá ficar fixado no lado direito*/}
 `
