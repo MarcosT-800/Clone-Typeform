@@ -60,10 +60,10 @@ const First: React.FC = () => {
     [0.047, 0.093],
     ['58vh', '0vh']
   )
-  const offsetY = useTransform(
+  const offsetY = useTransform( // a partir de certo ponto da tela iremos mudar a imagem do quadro
     scrollYProgress,
-    [0.328, 0.397, 0.461, 0.53],
-    ['0%', '-100%', '-100%', '-200%']
+    [0.328, 0.397, 0.461, 0.53], // tamanho da pagina INPUT
+    ['0%', '-100%', '-100%', '-200%'] // transição da segunda imagem para terceira
   )
 
   return (
