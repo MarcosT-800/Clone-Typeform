@@ -1,12 +1,13 @@
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
-export const Container = styled(motion.header)`
+//passando os estilos do header
+export const Container = styled(motion.header)` 
   width: 100%;
   height: 200px;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.1); //torna ele um pouco escuro
 
-  position: fixed;
-  top: 0;
-  z-index: 9999;
+  position: fixed; //ficará fixado
+  top: 0; // fixado no topo
+  z-index: 9999; //deixa ele por cima das coisas
 `
