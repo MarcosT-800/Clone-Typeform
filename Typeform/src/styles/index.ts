@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'  // importando também o motion de dentro
 
 //exportando o main que usaremos entro do App.tsx
 export const Main = styled.main` 
-  .first {  {/**/}
+  .first {  //cor da primeira section que é vermelha
     background: red;
     overflow: hidden;
 
@@ -13,7 +13,7 @@ export const Main = styled.main`
       height: 100%;
     }
 
-    .a {
+    .a { 
       background: #f5f1ea;
       height: 100%;
       display: flex;
@@ -46,13 +46,13 @@ export const Main = styled.main`
       background: #0a7397;
     }
   }
-  .second {
+  .second { //cor da segunda section que é verde
     background: green;
   }
-  .third {
+  .third { //cor da terceira section que é amareka
     background: yellow;
   }
-  .fourth {
+  .fourth { //cor da quarta section que é azul
     background: blue;
   }
 `
