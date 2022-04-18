@@ -4,26 +4,27 @@ import { useViewportScroll, useTransform, motion } from 'framer-motion'
 import { Sticky } from '../../styles'
 
 const FirstAndSecond: React.FC = () => {
-  const { scrollYProgress } = useViewportScroll()
+  const { scrollYProgress } = useViewportScroll() 
 
-  const frameOpacity = useTransform(scrollYProgress, [0.196, 0.198], [0, 1])
-  const frameScale = useTransform(scrollYProgress, [0.558, 0.627], [0.511, 0.8])
+  const frameOpacity = useTransform(scrollYProgress, [0.196, 0.198], [0, 1]) //dizendo quando a opacidade do quadro vai aparecer e desaparecer
+  const frameScale = useTransform(scrollYProgress, [0.558, 0.627], [0.511, 0.8]) //dizendo que o quadro começa pequena e vai ficando grande
 
   return (
     <Sticky className="second">
-      <First />
+      <First /> // chamando o first
 
-      <motion.div
+      // parte da animação da Div
+      <motion.div 
         style={{
-          position: 'absolute',
+          position: 'absolute', //para que a div tenha um espaço só pra ela
           top: 0,
           left: 0,
           right: 0,
-          height: '100vh',
+          height: '100vh', //altura do quadro
           borderRadius: '4px',
-          border: '4px solid #fff',
-          opacity: frameOpacity,
-          scale: frameScale
+          border: '4px solid #fff', //cor branca ao redor do quadro
+          opacity: frameOpacity, //Opacidade do quadro
+          scale: frameScale // Escala do quadro
         }}
       />
     </Sticky>
@@ -32,10 +33,10 @@ const FirstAndSecond: React.FC = () => {
 
 const First: React.FC = () => {
   const { scrollYProgress } = useViewportScroll()
-  const firstRadius = useTransform(
-    scrollYProgress,
-    [0.198, 0.264, 0.558, 0.627],
-    [0, 4, 4, 0]
+  const firstRadius = useTransform( //dizendo quando o quadro deve se transformar
+    scrollYProgress, //falando que a animação será quando você escrolar
+    [0.198, 0.264, 0.558, 0.627], //tamanho da pagina
+    [0, 4, 4, 0] // tamanho que o quadro terá de acordo com o tamanho da pagína passado acíma
   )
   const firstScale = useTransform(
     scrollYProgress,
