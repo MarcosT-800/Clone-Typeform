@@ -17,14 +17,14 @@ export const Main = styled.main`
       background: #f5f1ea;
       height: 100%;
       display: flex;
-      align-items: flex-end;
+      align-items: flex-end; //joga o item pra baixo
 
-      .left-side {
+      .left-side { //o lado esquerdo verde que aparece no inicio
         width: 50%;
         height: 100%;
         background: #7dbb91;
       }
-      .right-side {
+      .right-side { //o lado direito
         width: 50%;
         height: 100%;
 
