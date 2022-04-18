@@ -43,15 +43,17 @@ const First: React.FC = () => {
     [0.198, 0.264, 0.558, 0.627],
     [1, 0.511, 0.511, 1]
   )
+  //animando o lado esquerdo
   const leftSideHeight = useTransform(
     scrollYProgress,
     [0, 0.058],
     ['20vh', '100vh']
   )
+  //animando a imagem ou a div do lado ddireito daqui pra baixo
   const rightSideScale = useTransform(
     scrollYProgress,
-    [0.047, 0.093],
-    [0, 0.511]
+    [0.047, 0.093], // tamanho da pagina INPUT
+    [0, 0.511] // Tamanho que a div vai ficar de acordo com o tamanho da página OUTPUT
   )
   const rightSideY = useTransform(
     scrollYProgress,
